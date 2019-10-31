@@ -22,6 +22,12 @@ int main()
             }
         }
     }
+    for(i=0;i<(N-1)/2;i++)
+    {
+        temp=a[i];
+        a[i]=a[N-1-i];
+        a[N-1-i]=temp;
+    }
     for(i=0;i<N;i++)
     {
         printf("%d\t",a[i]);
